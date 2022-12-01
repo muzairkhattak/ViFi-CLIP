@@ -1,0 +1,23 @@
+DATA:
+    ROOT: '/PATH/TO/videos/folder'
+    TRAIN_FILE: 'datasets_splits/ucf_splits/train1_few_shot_8.txt'
+    VAL_FILE: 'datasets_splits/ucf_splits/val1.txt'
+    DATASET: ucf101
+    NUM_FRAMES: 32
+    NUM_CLASSES: 101
+    LABEL_LIST: 'labels/ucf_101_labels.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 4 # BS 64
+    ACCUMULATION_STEPS: 2
+    EPOCHS: 50
+    LR: 8.e-03
+TRAINER:
+  ViFi_CLIP:
+    PROMPT_MODEL: True
+    N_CTX_VISION: 10
+    N_CTX_TEXT: 10
+    PROMPT_DEPTH_VISION: 12
+    PROMPT_DEPTH_TEXT: 12
+SAVE_FREQ: 10

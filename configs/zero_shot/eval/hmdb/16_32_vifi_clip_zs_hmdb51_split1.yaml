@@ -1,0 +1,20 @@
+DATA:
+    ROOT: '/PATH/TO/videos/folder'
+    TRAIN_FILE: 'datasets_splits/hmdb_splits/train1_few_shot_16.txt'
+    VAL_FILE: 'datasets_splits/hmdb_splits/val1.txt'
+    DATASET: hmdb51
+    NUM_FRAMES: 32
+    NUM_CLASSES: 51
+    LABEL_LIST: 'labels/hmdb_51_labels.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 4 # BS 64
+    ACCUMULATION_STEPS: 2
+    EPOCHS: 50
+    LR: 2.e-04
+TRAINER:
+  ViFi_CLIP:
+    ZS_EVAL: False # Make True only during test mode to evaluate zero-shot vanilla CLIP performance
+    USE: "both" # both refers to complete fine-tuning of CLIP (text+image encoders)
+SAVE_FREQ: 10

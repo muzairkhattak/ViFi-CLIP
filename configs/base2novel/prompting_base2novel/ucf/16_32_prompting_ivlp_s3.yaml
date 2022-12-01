@@ -1,0 +1,24 @@
+DATA:
+    ROOT: '/PATH/TO/videos/folder'
+    TRAIN_FILE: 'datasets_splits/base2novel_splits/ucf_splits/fs_base_s3_train.txt'
+    VAL_FILE: 'datasets_splits/base2novel_splits/ucf_splits/base_val.txt'
+    DATASET: ucf101
+    NUM_FRAMES: 32
+    NUM_CLASSES: 51
+    LABEL_LIST: 'labels/ucf_101_base_labels.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 4 # BS 64
+    ACCUMULATION_STEPS: 2
+    EPOCHS: 11
+    LR: 4.e-02
+TRAINER:
+  ViFi_CLIP:
+    PROMPT_MODEL: True # If true, will only train the prompts while keeping rest of the model frozen
+    N_CTX_VISION: 16
+    N_CTX_TEXT: 16
+    CTX_INIT: "a photo of a"
+    PROMPT_DEPTH_VISION: 9
+    PROMPT_DEPTH_TEXT: 9
+SAVE_FREQ: 10

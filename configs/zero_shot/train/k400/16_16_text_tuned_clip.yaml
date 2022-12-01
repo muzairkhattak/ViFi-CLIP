@@ -1,0 +1,19 @@
+DATA:
+    ROOT: '/PATH/TO/videos/folder'
+    TRAIN_FILE: 'datasets_splits/k400_splits/train.txt'
+    VAL_FILE: 'datasets_splits/k400_splits/val.txt'
+    DATASET: kinetics400
+    NUM_FRAMES: 32
+    NUM_CLASSES: 400
+    LABEL_LIST: 'labels/kinetics_400_labels.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 4 # Effective BS 256
+    ACCUMULATION_STEPS: 8
+    LR: 8e-06
+    EPOCHS: 10
+TRAINER:
+  ViFi_CLIP:
+    ZS_EVAL: False # Make True only during test mode to evaluate zero-shot vanilla CLIP performance
+    USE: "text" # text refers to tuning only text encoder of CLIP

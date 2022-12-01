@@ -1,0 +1,20 @@
+DATA:
+    ROOT: '/PATH/TO/videos/folder'
+    TRAIN_FILE: 'datasets_splits/k400_splits/train.txt'
+    VAL_FILE: 'datasets_splits/k400_splits/val.txt'
+    DATASET: kinetics400
+    NUM_FRAMES: 16
+    NUM_CLASSES: 400
+    LABEL_LIST: 'labels/kinetics_400_labels.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 4 # BS 512
+    ACCUMULATION_STEPS: 16
+    LR: 2.2e-05
+TEST:
+    MULTI_VIEW_INFERENCE: True
+TRAINER:
+  ViFi_CLIP:
+    ZS_EVAL: False # Make True only during test mode to evaluate zero-shot vanilla CLIP performance
+    USE: "both" # both refers to complete fine-tuning of CLIP (text+image encoders)

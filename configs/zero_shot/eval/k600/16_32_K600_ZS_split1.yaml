@@ -1,0 +1,16 @@
+DATA:
+    ROOT: '/PATH/TO/videos/folder'
+    TRAIN_FILE: 'datasets_splits/k600_splits/ZS_split1_K600_eval.txt'
+    VAL_FILE: 'datasets_splits/k600_splits/ZS_split1_K600_eval.txt'
+    DATASET: kinetics400
+    NUM_FRAMES: 32
+    NUM_CLASSES: 160
+    LABEL_LIST: 'labels/ZS_split1_K600.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 4  # effective BS 64
+    ACCUMULATION_STEPS: 4
+    EPOCHS: 50
+    LR: 2.e-6
+SAVE_FREQ: 10
