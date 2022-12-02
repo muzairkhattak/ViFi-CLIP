@@ -5,7 +5,7 @@
 > [**Fine-tuned CLIP models are efficient video learners**](https://arxiv.org/abs/2210.03117)<br>
 > [Hanoona Rasheed*](https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl=en&authuser=1&oi=sra), [Muhammad Uzair Khattak*](https://scholar.google.com/citations?user=M6fFL4gAAAAJ&hl=en&authuser=1), [Muhammad Maaz](https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra), [Salman Khan](https://salman-h-khan.github.io/), [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en)
 
-[![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
+[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://muzairkhattak.github.io/ViFi-CLIP/)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
 
 
@@ -37,7 +37,7 @@ Official implementation of the paper "[Fine-tuned CLIP models are efficient vide
 ## Highlights
 
 ![main figure](docs/main_figure.png)
-<p align="justify">  This work explores the capability of a simple baseline called ViFi-CLIP (Video Fintuned CLIP)
+<p align="justify">  This work explores the capability of a simple baseline called ViFi-CLIP (Video Fine-tuned CLIP)
 for adapting image pretrained CLIP to video domain. The figure compares the zero-shot performance of vanilla CLIP
 and several of its variants adapted for videos (trained on Kinetics-400, evaluated on UCF-101 and HMDB-51).
 The t-SNE visualizations of video-embeddings obtained from ViFi-CLIP (4th col.) are compared with embeddings
@@ -68,10 +68,10 @@ designed to model temporal information in videos. </p>
 ## Main Contributions
 
 1) **ViFi-CLIP:** We formulate and show the significance of an often neglected but
-simple baseline for transferring image-based CLIP model to video domain. ViFi-CLIP (Video Fintuned CLIP) shows that a simple fine-tuning of CLIP is sufficient to learn suitable video-specific inductive biases,
+simple baseline for transferring image-based CLIP model to video domain. ViFi-CLIP (Video Fine-tuned CLIP) shows that a simple fine-tuning of CLIP is sufficient to learn suitable video-specific inductive biases,
 and can perform competitive to more complex approaches having dedicated components designed to model temporal information in videos.
-2) **Base-to-novel generalization benchmark** We introduce base-to-novel generalization benchmark for video-domain for evaluating the generalization ability of models for video action recognition.
-3) **Bridge and Prompt approach** We show the effectiveness of our proposed ‘bridge and prompt’ approach to first bridge the modality gap through fine-tuning followed by prompt learning in both visual and language branches of the CLIP model
+2) **Base-to-novel generalization benchmark:** We introduce base-to-novel generalization benchmark for video-domain for evaluating the generalization ability of models for video action recognition.
+3) **Bridge and Prompt approach:** We show the effectiveness of our proposed ‘bridge and prompt’ approach to first bridge the modality gap through fine-tuning followed by prompt learning in both visual and language branches of the CLIP model
 for low-data regimes.
 
    
@@ -196,9 +196,12 @@ python -m torch.distributed.launch --nproc_per_node=8 main.py \
 --only_test --resume /PATH/TO/CKPT --opts TEST.NUM_CLIP 4 TEST.NUM_CROP 3
 ```
 
+## Contact
+If you have any questions, please create an issue on this repository or contact at uzair.khattak@mbzuai.ac.ae or hanoona.bangalath@mbzuai.ac.ae .
+
 
 # Citation
-If you use our work, please consider citing
+If you use our approach (code, model or dataset splits) in your research, please consider citing:
 ```
 @article{hanoona2022vificlip,
     title={Finetuned CLIP models are efficient video learners},
