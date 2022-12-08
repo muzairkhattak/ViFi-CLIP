@@ -2,7 +2,7 @@
 
 
 
-> [**Fine-tuned CLIP models are efficient video learners**](https://arxiv.org/abs/2210.03117)<br>
+> [**Fine-tuned CLIP models are efficient video learners**](https://arxiv.org/abs/2212.03640)<br>
 > [Hanoona Rasheed*](https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl=en&authuser=1&oi=sra), [Muhammad Uzair Khattak*](https://scholar.google.com/citations?user=M6fFL4gAAAAJ&hl=en&authuser=1), [Muhammad Maaz](https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra), [Salman Khan](https://salman-h-khan.github.io/), [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en)
 
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://muzairkhattak.github.io/ViFi-CLIP/)
@@ -11,7 +11,7 @@
 
 
 
-Official implementation of the paper "[Fine-tuned CLIP models are efficient video learners]()".
+Official implementation of the paper "[Fine-tuned CLIP models are efficient video learners](https://arxiv.org/abs/2212.03640)".
 <hr />
 
 [//]: # ([![PWC]&#40;https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/maple-multi-modal-prompt-learning/prompt-engineering-on-imagenet&#41;]&#40;https://paperswithcode.com/sota/prompt-engineering-on-imagenet?p=maple-multi-modal-prompt-learning&#41;)
@@ -29,8 +29,8 @@ Official implementation of the paper "[Fine-tuned CLIP models are efficient vide
 [//]: # (<hr />)
 
 # :rocket: News
-* **(Dec 1, 2022)** 
-  * Training and evaluation codes for [ViFi-CLIP](configs/), along with pretrained models are released.
+* **(Dec 6, 2022)** 
+  * Training and evaluation codes for [ViFi-CLIP](https://arxiv.org/abs/2212.03640), along with pretrained models are released.
   
 <hr />
 
@@ -206,7 +206,7 @@ If you use our approach (code, model or dataset splits) in your research, please
 @article{hanoona2022vificlip,
     title={Finetuned CLIP models are efficient video learners},
     author={Rasheed, Hanoona and khattak, Muhammad Uzair and Maaz, Muhammad and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={arXiv:},
+    journal={arXiv:2212.03640},
     year={2022}
 }
 ```
