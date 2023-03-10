@@ -1,4 +1,4 @@
-# Fine-tuned CLIP models are efficient video learners
+# Fine-tuned CLIP models are efficient video learners [CVPR 2023]
 
 
 
@@ -29,6 +29,8 @@ Official implementation of the paper "[Fine-tuned CLIP models are efficient vide
 [//]: # (<hr />)
 
 # :rocket: News
+* **(Feb 28, 2023)**
+  * Paper accepted at CVPR 2023 :tada: 
 * **(Dec 6, 2022)** 
   * Training and evaluation codes for [ViFi-CLIP](https://arxiv.org/abs/2212.03640), along with pretrained models are released.
   
@@ -203,11 +205,11 @@ If you have any questions, please create an issue on this repository or contact 
 # Citation
 If you use our approach (code, model or dataset splits) in your research, please consider citing:
 ```
-@article{hanoona2022vificlip,
+@inproceedings{hanoonavificlip,
     title={Finetuned CLIP models are efficient video learners},
     author={Rasheed, Hanoona and khattak, Muhammad Uzair and Maaz, Muhammad and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={arXiv:2212.03640},
-    year={2022}
+    booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    year={2023}
 }
 ```
 
