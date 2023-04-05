@@ -1,4 +1,10 @@
 
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uqPLPIyWBb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<br>
+
 ![main figure](docs/main_figure.png)
 <p align="justify">  This work explores the capability of a simple baseline called ViFi-CLIP (Video Fine-tuned CLIP)
 for adapting image pretrained CLIP to video domain. The figure compares the zero-shot performance of vanilla CLIP
