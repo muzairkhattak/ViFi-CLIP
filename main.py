@@ -15,7 +15,7 @@ from utils.logger import create_logger
 import time
 import numpy as np
 import random
-from apex import amp
+import torch.cuda.amp as amp
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 from datasets.blending import CutmixMixupBlending
 from utils.config import get_config
