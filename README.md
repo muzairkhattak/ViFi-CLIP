@@ -11,7 +11,7 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2212.03640)
 [![video](https://img.shields.io/badge/Video-Presentation-F9D371)](https://www.youtube.com/watch?v=uqPLPIyWBb0)
 [![slides](https://img.shields.io/badge/Presentation-Slides-B762C1)](https://drive.google.com/file/d/1_CITKY9u_Fh77iqQDP2TrcbVD5_61ArT/view?usp=sharing)
-[![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/muzairkhattak/ViFi-CLIP/ViFi-CLIP_Inference_custom_video.ipynb)
+[![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/muzairkhattak/ViFi-CLIP/blob/main/ViFi-CLIP_Inference_custom_video.ipynb)
 
 Official implementation of the paper "[Fine-tuned CLIP models are efficient video learners](https://arxiv.org/abs/2212.03640)".
 <hr />
